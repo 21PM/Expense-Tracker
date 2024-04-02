@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
         <!-- <h1>Expense Tracker</h1> -->
@@ -50,7 +51,7 @@
                                 
 
                                     <div id="Total_Sal_div">
-                                    <span class="Total_salary"><p id="Total_salary">50</p></span>
+                                    <span class="Total_salary"><p id="Total_salary">00</p></span>
                                     <h5>Total salary</h5>
                                 </div>
                                      
@@ -87,8 +88,11 @@
                             <!-- <div class= "Transaction_history" >
 
                                 <h3>Grocery</h3> <span>100</span>
-
+                                <span class="material-symbols-outlined" id="deleteBtn">delete </span>
+                                
                             </div> -->
+                            
+                    
 
                         </div>
 
@@ -125,7 +129,7 @@
                        
                         <div>
                         <label for="amount">Amount :</label> 
-                        <input type="text" id="amount" value="" placeholder="Enter Amount">
+                        <input type="number" id="amount" value="" pattern="[0-9]*" placeholder="Enter Amount">
                         </div>
 
                     </div>

@@ -103,17 +103,50 @@
     margin-bottom: 1rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
 
-
-
 }
-#activites_div{
+#activites_div {
     height: 95%;
-    /* border:2px solid rgb(20, 169, 79); */
-    background-color:#182341;
+    background-color: #182341;
     border-radius: 1rem;
     margin: 0.5rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
-}
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    overflow-y: auto; /* Enable scrolling for large content */
+    padding: 10px; /* Add some padding for better content spacing */
+  }
+  
+  .Transaction_history {
+    display: felx;
+    margin-top: 5px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Light separator line */
+    /* background-color: #1e2734; Darker background for transaction items */
+    color: white;
+    transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+    cursor: pointer; /* Indicate clickable transactions */
+    animation: slide-in 0.5s ease-in forwards; /* Slide-in animation on load */
+  }
+  
+  .Transaction_history h3 {
+    margin-bottom: 5px; /* Adjust spacing between title and amount */
+  }
+  
+  .green,
+  .red {
+    font-weight: bold; /* Make amounts stand out visually */
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Slide up from bottom on load */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 #overview_div h4{
     margin-left: 3rem;
     padding-top: 20px;
@@ -207,3 +240,18 @@ select {
     justify-content: space-between;
     padding: 0 20px;
   }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.red{
+    color: red;
+}
+
+.green{
+    color: rgb(5, 162, 0);
+}
