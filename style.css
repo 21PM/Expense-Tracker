@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    height: 100vh;
+    width: 100%;
+}
+#profile{
+    width: 20%;
+    height: 100%;
+    border: 2px solid rgb(4, 166, 20);
+    background-color: #0c142c;
+    color: white;
+
+}
+#dashboard{
+    width: 80%;
+    height: 100%;
+    border: 2px solid pink;
+    background-color:#182341;
+    color: white;
+
+}
+#Profile-name{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+#listitems{
+    margin-top: 100px;
+    text-align: center;
+    line-height: 70px;
+}
+#dashborad_head_div{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+}
+#dashborad_head_div span{
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+}
+#search_field{
+    margin-right: 50px;
+    height: 30px;
+    width: 20%;
+    border-radius: 3px;
+    
+}
+#Top_Outer_Div{
+    width: 92%;
+    /* padding: 5px 7px; */
+    /* border: 2px solid blueviolet; */
+    margin: auto;
+    margin-top: 0.5rem;
+    height: 55vh;
+    display: flex;
+    gap: 1rem   ;
+}
+#Bottom_Outer_Div{
+    width: 95%;
+    padding: 5px 7px;
+    /* border: 2px solid rgb(34, 102, 211); */
+    margin: auto;
+    margin-top: 0.5rem;
+    height: 31vh;
+}
+
+#Top_Outer_Div_child1{
+    width: 60%;
+    /* border: 2px solid saddlebrown; */
+    /* padding: 2px 5px; */
+}
+#Top_Outer_Div_child2{
+    width: 40%;
+    /* border: 2px solid rgb(91, 139, 19); */
+    /* padding: 2px 5px; */
+    
+}
+#overview_div{
+    height: 35%;
+    /* border: 2px solid pink; */
+    border-radius: 1rem;
+    background-color:#182341;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 1rem;
+    align-items: center;
+
+}
+#expenses_chart_div{
+    height: 59%;
+    /* border:2px solid yellow; */
+    border-radius: 1rem;
+    background-color:#182341;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+
+
+
+}
+#activites_div{
+    height: 95%;
+    /* border:2px solid rgb(20, 169, 79); */
+    background-color:#182341;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+#overview_div h4{
+    margin-left: 3rem;
+    padding-top: 20px;
+
+}
+#valuesDiv{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    padding: 5px 50px;
+    margin-top: 2%;
+}
+#valuesDiv h5{
+    font-size:small;
+    color: #ccc;
+}
+#valuesDiv p{
+    letter-spacing: 2px;
+    font-size: x-large;
+}
+#Total_Sal_div{
+    color: green;
+}
+#Total_Exp_div{
+    color: rgb(255, 0, 0);
+}
+#Total_Bal_div{
+    color: rgb(255, 251, 0);
+}
+#Bottom_Outer_Div{
+
+}
+#Add_Transaction_Div{
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    /* border: 2px solid black; */
+    border-radius: 1rem;
+    height: 30vh;
+    margin-left: 1%;
+}
+select {
+    /* Adjust these styles as needed */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* Optional: Add some background color */
+    background-color: #f5f5f5;
+  }
+  
+  select:focus {
+    /* Add a subtle outline on focus */
+    outline: 1px solid #ddd;
+  }
+  #name{
+    border-style: none;
+    border-radius: 2px;
+    padding: 3px;
+
+  }
+  #amount{
+    padding: 3px;
+    border-radius: 2px;
+    border-style: none;
+  }
+  
+  #inputdiv{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    /* border: 2px solid seagreen; */
+  }
+  #btn_div{
+    /* border: 2px solid yellow; */
+    display: flex;
+    margin-left: 35%;
+    margin-top: 5%;
+    
+  }
+  #Add_Button{
+    padding: 10px;
+    width: 30%;
+    background-color: purple;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  .Transaction_history{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }

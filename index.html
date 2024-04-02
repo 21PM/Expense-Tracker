@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- <h1>Expense Tracker</h1> -->
+
+        <div id="top">
+
+
+            <!--  Left side Section of webpage  -->
+            <div id="profile">
+                
+                <div id="Profile-name">
+                <img src="image1.png" alt="profile_Image" id="profile_Image" width="50px" height="50px" style="border-radius: 50px;"><span>Paras More</span>
+                
+                </div>
+                
+                <ul id="listitems">
+                    <li id="list_dash">dashboard</li>
+                    <li id="list_addEx">Add Expense</li>
+                    <li id="list_showEx">Show Expenses</li>
+                    <li id="List_Activites">Activites</li>
+                </ul>
+
+            </div>
+
+
+            <!-- This is right side section of webpage  -->
+
+            <div id="dashboard">
+                <div id="dashborad_head_div">
+                <span><h1 style="margin-left: 50px; margin-top: 20px;">Dashboard</h1></span>
+                <input type="text" value="Search" id="search_field">
+                </div>
+
+
+                <div id="Top_Outer_Div">
+                    
+                    <div id="Top_Outer_Div_child1">
+
+                        <div id="overview_div">
+                            <h4>OverView</h4>
+
+                            <div id="valuesDiv">
+                                
+
+                                    <div id="Total_Sal_div">
+                                    <span class="Total_salary"><p id="Total_salary">50</p></span>
+                                    <h5>Total salary</h5>
+                                </div>
+                                     
+                                <div id="Total_Exp_div">
+                                    <span class="You_Owe"><p id="You_Owe">00</p></span>
+                                    <h5>Total Expenses</h5>
+                                </div>
+
+                                <div id="Total_Bal_div">    
+                                    <span class="You_get_back"><p id="You_get_back">00</p></span>
+                                    <h5>Balance Amount</h5>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div id="expenses_chart_div">
+
+                            <h2>Chart</h2>
+
+                        </div>
+
+                    </div>
+
+                    <div id="Top_Outer_Div_child2">
+
+                        <div id="activites_div">
+
+                            <h2>Recent Transaction</h2>
+
+                            <!-- <div class= "Transaction_history" >
+
+                                <h3>Grocery</h3> <span>100</span>
+
+                            </div> -->
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div id="Bottom_Outer_Div">
+
+                    <div id="Add_Transaction_Div">
+                        <h2>Add Transaction</h2>
+
+
+                        <label for="category">Select Transaction Category:</label>
+                        <select name="category" id="category">
+                          <option  value="" selected id="default">Please select an option</option>
+                          <option value="income" class="income" id="income">Income</option>
+                          <option value="expenses" class="expenses" id="expenses">Expenses</option>
+                        </select>
+                        <br>
+                        <br>
+
+                    <div id="inputdiv">
+
+                    <div>
+
+                        <label for="name">Title :</label> 
+                        <input type="text" id="name" value="" placeholder="Enter Transaction Title">
+                        </div>
+                       
+                        <div>
+                        <label for="amount">Amount :</label> 
+                        <input type="text" id="amount" value="" placeholder="Enter Amount">
+                        </div>
+
+                    </div>
+
+                    <div id="btn_div">
+                        <button id="Add_Button" value="submit">ADD</button>
+                    </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+           
+
+
+
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
