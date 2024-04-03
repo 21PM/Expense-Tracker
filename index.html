@@ -71,10 +71,17 @@
 
                         </div>
 
+                        <!-- *************************** Chart Container ************************* -->
+
                         <div id="expenses_chart_div">
 
                             <h2>Chart</h2>
-
+                            <div id="chart_div">
+                                <canvas id="myChart"></canvas>
+                               
+                            </div>
+                              
+                           
                         </div>
 
                     </div>
@@ -149,6 +156,44 @@
 
         </div>
 
-    <script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+<script>
+    
+//   const ctx = document.getElementById('myChart');
+
+//   new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//       labels: ['Total Salary', 'Expenses', 'Available Balance'],
+//       datasets: [{
+//         label: 'Expenses chart',
+//         backgroundColor : ["pink"],
+//         data: [12,54,23],   
+//         backgroundColor: [
+//       'green',
+//       'red',
+//       'gold',
+      
+//     ],
+       
+
+
+//       }]
+//     },
+//     options: {
+//       scales: {
+//         y: {
+//           beginAtZero: true
+//         }
+//       }
+//     }
+//   });
+
+
+</script>
+
+   
 </body>
 </html>

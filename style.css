@@ -176,9 +176,8 @@
 #Total_Bal_div{
     color: rgb(255, 251, 0);
 }
-#Bottom_Outer_Div{
 
-}
+
 #Add_Transaction_Div{
     width: 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
@@ -186,6 +185,8 @@
     border-radius: 1rem;
     height: 30vh;
     margin-left: 1%;
+    padding: 10px;
+    align-items: center;
 }
 select {
     /* Adjust these styles as needed */
@@ -254,4 +255,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .green{
     color: rgb(5, 162, 0);
+}
+#chart_div{
+  height: 90%;
+  width: 100% 
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
 }
