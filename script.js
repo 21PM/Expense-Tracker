@@ -96,12 +96,12 @@ category.addEventListener('change',function(e){
             transactionDiv.innerHTML = `
                 <h3>${inputTitle.value}</h3>
                 <p class = "green">${inputAmount.value}</p>
-                <span class="material-symbols-outlined" id="deleteBtn">delete </span>
-
             `;
 
             // Append the new div to the activitiesDiv
             activitesDiv.appendChild(transactionDiv);  
+
+            
             
             //******************* */ Ending Transaction History********************
             
@@ -140,7 +140,6 @@ category.addEventListener('change',function(e){
            transactionDiv.innerHTML = `
                <h3>${inputTitle.value}</h3>
                <p class = "red">${inputAmount.value}</p>
-               <span class="material-symbols-outlined" id="deleteBtn">delete </span>
            `;
            // Append the new div to the activitiesDiv
            activitesDiv.appendChild(transactionDiv);
@@ -156,6 +155,8 @@ category.addEventListener('change',function(e){
             }
             
         }
+
+        
 
     }
     selectedValue = category.value;
@@ -226,5 +227,41 @@ function AvailableBalanceCheck(e){
 
 
 
+// ********************************** Chart Bot Javascript Started ONLY Display and Hide funcationality******************************//
+var bot_icon = document.getElementById("Bot-image");
+var chat_box =  document.getElementById("Chat-UI-DIV");
+var gemini_close_btn = document.querySelector(".material-symbols-outlined");
 
 
+bot_icon.addEventListener('click',displayChatbox)
+
+function displayChatbox(){
+
+    chat_box.style.display= "block";
+    bot_icon.style.display ="none";
+
+}
+
+
+gemini_close_btn.addEventListener('click',hideChatbox)
+
+function hideChatbox(){
+
+    bot_icon.style.display ="block";
+    chat_box.style.display= "none";
+    
+
+}
+
+// ********************************** Chart Bot Javascript ended ONLY Display and Hide funcationality ******************************//
+
+
+function generatePDF(){
+  const RecentHistoryDiv = document.getElementById("activites_div");
+  console.log(RecentHistoryDiv);
+
+  html2pdf()
+  .from(RecentHistoryDiv)
+  .save();  
+
+}
