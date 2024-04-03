@@ -176,9 +176,9 @@ function AvailableBalanceCheck(e){
    
     chart.data.datasets[0].data[0] = totalsal;
     chart.data.datasets[0].data[1] = totalExpe;
-    chart.data.datasets[0].data[2] = Balance;
+    // chart.data.datasets[0].data[2] = Balance;
 
-      chart.update();
+    //   chart.update();
 
       
 
@@ -187,7 +187,9 @@ function AvailableBalanceCheck(e){
         var balanceCal = String(totalsal - totalExpe);
 
         // chart.data.datasets[0].data[0] = parseInt(balanceCal); 
+        chart.data.datasets[0].data[2] = parseInt(balanceCal);
 
+        chart.update();
 
         // chart.update();
 
@@ -198,8 +200,9 @@ function AvailableBalanceCheck(e){
 
         var balanceCal = parseInt(totalsal - totalExpe);
 
-        chart.data.datasets[0].data[1] = parseInt(balanceCal); 
+        chart.data.datasets[0].data[2] = parseInt(balanceCal);
 
+        chart.update();
         // chart.update();
 
         // console.log(balanceCal);
@@ -208,6 +211,9 @@ function AvailableBalanceCheck(e){
 
     }else if(totalExpe === totalsal){
 
+      chart.data.datasets[0].data[2] = parseInt(balanceCal);
+
+        chart.update();
 
       // chart.data.datasets[0].data[0] = parseInt(balanceCal); 
 
